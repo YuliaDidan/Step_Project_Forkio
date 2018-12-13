@@ -1,0 +1,20 @@
+<!-- Christina -->
+<!-- это просто пример верстки и как я заинклюдила навигацию и лого -->
+<!-- если будешь переделывать заинклюдь точно так же -->
+<!-- и также навешаны классы из бутстрапа -->
+<header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-3  d-flex justify-content-between">
+          {% include 'components/logo/logo_header.html' %} 
+           <!-- это кнопка под мобильную версию, если будет нужно  -->
+          <button class="menu-btn"> 
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="col-9 justify-content-end d-flex align-items-center">
+          {% include 'components/header/nav/nav.html' %}
+        </div>
+      </div>
+    </div>
+</header>

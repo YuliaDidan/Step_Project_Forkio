@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/slick-carousel/slick/slick.scss";
+
+@import "styles/vars";
+@import "styles/mixins";
+@import "styles/adjustments";
+
+@import "components/header/header";
+@import "components/header/nav/nav";
+@import "components/logo/logo_header";
+@import "components/hero/hero";
+@import "components/revolutionary/revolutionary";
+@import "components/here/here";
+@import "components/carusel/carusel";
+@import "components/about/about";
+@import "components/pricing/pricing";
+@import "components/callback/callback";
+@import "components/footer/footer";
+@import "components/logo/logo_footer";
+
+

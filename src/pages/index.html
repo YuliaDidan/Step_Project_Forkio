@@ -1,0 +1,18 @@
+{% extends 'template.html' %}
+{%
+  set pageName = 'homepage'
+%}
+{% block title %}
+  Step_Project_Forkio
+{% endblock %}
+
+{% block content %}
+{% include 'components/hero/hero.html' %}
+{% include 'components/revolutionary/revolutionary.html' %}
+{% include 'components/here/here.html' %}
+{% include 'components/carusel/carusel.html' %}
+{% include 'components/about/about.html' %}
+{% include 'components/pricing/pricing.html' %}
+{% include 'components/callback/callback.html' %}
+{% endblock %}
+
