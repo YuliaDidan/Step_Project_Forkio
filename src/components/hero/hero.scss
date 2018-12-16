@@ -1,0 +1,93 @@
+.hero {
+    background-color:  #81779d;
+    @include background('../img/hero.png');
+    padding-top: 60px;
+}
+
+.hero__title {    
+    color: $text-white;
+    font-family: Montserrat;
+    @include rem(82);
+    font-weight: 700;    
+    margin-bottom: 20px;  
+    
+    @media (max-width: 767.98px) { 
+        @include rem(72);        
+    } 
+
+    @media (max-width: 479.98px) {
+        @include rem(54);
+    }
+
+    @media (max-width: 319.98px) {
+        @include rem(48);
+    }
+}
+
+.hero__subtitle {
+    color: $accent-color;
+    font-family: Lato;
+    @include rem(30);
+    font-weight: 400;    
+    margin-bottom: 20px;
+    
+    @media (max-width: 767.98px) { 
+        @include rem(24);        
+    } 
+
+    @media (max-width: 479.98px) {
+        @include rem(20);
+        line-height: 24px;
+    }
+
+    @media (max-width: 319.98px) {
+        @include rem(18);
+    }
+
+}
+
+.hero__paragraph {
+    color: $text-light-grey;
+    font-family: Montserrat;
+    @include rem(16);
+    font-weight: 400; 
+    text-transform: uppercase;
+    margin-bottom: 455px;
+    
+    @media (max-width: 767.98px) { 
+        @include rem(14);        
+    } 
+
+    @media (max-width: 479.98px) {
+        @include rem(16);
+    }
+
+    @media (max-width: 319.98px) {
+        @include rem(14);
+    }
+
+}
+
+.hero__button {
+    color: $text-white;
+    padding: 23px 63px;
+    font-family: Montserrat;
+    @include rem(21);
+    font-weight: 700;
+    background-color: $accent-color;
+    border-radius: 40px;
+    transform: translateY(35px);
+    border: solid 3px transparent;
+    transition: color .2s ease-in-out;
+    
+    &:hover {
+        background-color: $text-white;
+        color: $accent-color;
+        border: solid 3px $accent-color;
+    }
+
+    @media (max-width: 479.98px) {
+        @include rem(18);
+        padding: 15px 27px;
+    }    
+}
