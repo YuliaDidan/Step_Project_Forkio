@@ -1,0 +1,12 @@
+.logo-header {
+  &__link {
+    display: block;
+    width: rem(153px);
+    height: rem(41px);
+    @include background('../img/logo_header.png');
+    transition: all .3s;
+    &:hover {
+      @include background('../img/logo_header-hover.png');
+    }
+  }
+}

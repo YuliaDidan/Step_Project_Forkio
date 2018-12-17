@@ -1,0 +1,67 @@
+.about {
+  padding-top: rem(100px);
+  @include background('../img/about.png');
+  text-align: center;
+  .section-title-h3 {
+    margin-bottom: rem(85px);
+  }
+  &-item {
+    margin-bottom: rem(100px);
+  }
+  &-icon {
+    height: rem(85px);
+  }
+  &-text {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 24px;
+    color: $text-white;
+  }
+  &-footer__text {
+    margin: 0;
+    color: rgba($text-violet, .8);
+    font-family: Lato;
+    font-size: rem(14px);
+    line-height: rem(21px);
+    &::after {
+      content: '';
+      display: block;
+      margin: rem(15px) auto 0;
+      width: 75%;
+      height: rem(2px);
+      background-color: $text-decoration;
+    }
+  }
+}
+
+//Icons Section About
+@mixin icons-about($width, $height, $x, $y) {
+  background: url('../img/icons_about/sprites-about.png') no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+	width: $width;
+	height: $height;
+	background-position: $x $y !important;
+}
+
+.logo1 {
+  @include icons-about(rem(165px), rem(43px), 0, rem(-58px));
+}
+.logo2 {
+  @include icons-about(rem(148px), rem(50px), 0, rem(-101px));
+}
+.logo3 {
+  @include icons-about(rem(64px), rem(64px), rem(-148px), rem(-101px));
+  
+}
+.logo4 {
+  @include icons-about(rem(225px), rem(24px), 0, 0);
+}
+.logo5 {
+  @include icons-about(rem(166px), rem(34px), 0, rem(-24px));
+}
+.logo6 {
+  @include icons-about(rem(108px), rem(34px), 0, rem(-151px));
+}

@@ -1,0 +1,73 @@
+.pricing {
+  padding: rem(70px) 0 rem(150px); 
+  background: $bg-violet url('../img/pricing-bg.png') no-repeat center/cover;
+  text-align: center;
+  color: $text-white;
+  .section-title-h3 {
+    margin-bottom: rem(120px);
+  }
+  &-card {
+    background-color: rgba(#fff, .11);
+    width: 96%;
+    margin: 0 auto;
+    transition: all .3s;
+    &:hover, &.active {
+      background-color: rgba(#000, .11);
+      transform: scale(1.1, 1.2);
+      .pricing-card__header {
+        background-color: rgba(#000, .06);
+      }
+    }
+    &__header {
+      padding: rem(45px) rem(15px) rem(35px);
+      background-color: rgba(#fff, .06);
+    }
+    &__title {
+      font-size: rem(24px);
+      line-height: rem(20.45px);
+      text-transform: uppercase
+    }
+    &__content {
+      padding: rem(30px) rem(15px) rem(40px);
+    }
+    &__price {
+      font-size: rem(60px);
+      line-height: rem(60px);
+      font-weight: 700;
+      text-transform: uppercase;
+      span {
+        font-weight: 400;
+      }
+    }
+    &__duration {
+      display: block;
+      margin: rem(15px) 0 0;
+      font-size: rem(14px);
+      text-transform: uppercase;
+      color: rgba(#fff, .3);
+      &::after {
+        content: '';
+        display: block;
+        margin: rem(40px) auto rem(30px);
+        width: rem(60px);
+        height: rem(5px);
+        background-color: $accent-color;
+      }
+    }
+    &__descr {
+      min-height: rem(65px);
+      font-size: rem(16px);
+      line-height: rem(32px);
+    }
+    &__btn {
+      @include btn(rem(160px), rem(42px), rem(15px), 500, rgba($text-white, .15));
+      text-transform: uppercase;
+      &:hover {
+        background-color: rgba($text-white, .7);
+        color: $accent-color;
+      }
+
+    }
+  }
+  
+}
