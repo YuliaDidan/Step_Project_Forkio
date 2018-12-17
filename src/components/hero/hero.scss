@@ -78,7 +78,7 @@
     border-radius: 40px;
     transform: translateY(35px);
     border: solid 3px transparent;
-    transition: color .2s ease-in-out;
+    transition: all .3s ease-in-out;
     
     &:hover {
         background-color: $text-white;
