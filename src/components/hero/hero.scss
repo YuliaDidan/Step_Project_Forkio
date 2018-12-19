@@ -11,15 +11,15 @@
     font-weight: 700;    
     margin-bottom: 20px;  
     
-    @media (max-width: 767.98px) { 
+    @media (max-width: 768px) { 
         @include rem(72);        
     } 
 
-    @media (max-width: 479.98px) {
+    @media (max-width: 480px) {
         @include rem(54);
     }
 
-    @media (max-width: 319.98px) {
+    @media (max-width: 320px) {
         @include rem(48);
     }
 }
@@ -68,6 +68,10 @@
 
 }
 
+.hero__button-container {    
+    transform: translateY(80px);
+}
+
 .hero__button {
     color: $text-white;
     padding: 23px 63px;
@@ -75,10 +79,10 @@
     @include rem(21);
     font-weight: 700;
     background-color: $accent-color;
-    border-radius: 40px;
-    transform: translateY(35px);
+    border-radius: 40px;    
     border: solid 3px transparent;
     transition: all .3s ease-in-out;
+    margin-bottom: 20px;
     
     &:hover {
         background-color: $text-white;
@@ -90,4 +94,11 @@
         @include rem(18);
         padding: 15px 27px;
     }    
+}
+
+.hero__button-text-under {
+    font-family: Montserrat;
+    @include rem(14);
+    font-weight: 400;
+    color: $text-light-grey;
 }
