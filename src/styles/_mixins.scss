@@ -17,11 +17,10 @@
   height: $height;
   font-size: $font-size;
   font-weight: $font-weight;
-  cursor: pointer;
   background-color: $bg-color;
   color: $color;
   border: 1px solid $accent-color;
-  border-radius: rem(30px);
+  border-radius: 30px;
   transition: all .3s;
   &:hover {
     background-color: $text-white;

@@ -5,15 +5,17 @@
 <header class="header">
     <div class="container">
       <div class="row">
-        <div class="col-3  d-flex justify-content-between">
+        <div class="col-lg-2 col-md-6">
           {% include 'components/logo/logo_header.html' %} 
            <!-- это кнопка под мобильную версию, если будет нужно  -->
           <button class="menu-btn"> 
             <i class="fas fa-bars"></i>
           </button>
         </div>
-        <div class="col-9 justify-content-end d-flex align-items-center">
+        <div class="col-lg-8 col-md-12 d-flex justify-content-lg-end justify-content-center align-items-center order-md-3">
           {% include 'components/header/nav/nav.html' %}
+        </div>
+        <div class="col-lg-2 col-md-6 d-flex justify-content-end">
           {% include 'components/buttons/button-header/button-header.html' %}
         </div>
       </div>
