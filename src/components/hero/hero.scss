@@ -90,10 +90,15 @@
         border: solid 3px $accent-color;
     }
 
-    @media (max-width: 479.98px) {
+    @media (max-width: 480px) {
         @include rem(18);
         padding: 15px 27px;
-    }    
+    }
+    
+    @media (max-width: 3200px) {
+        @include rem(17);
+        padding: 13px 25px;
+    }
 }
 
 .hero__button-text-under {

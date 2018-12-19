@@ -8,29 +8,6 @@
     } 
 }
 
-.media-body-right {
-    width: 70%;
-}
-
-.media-body-left {
-    width: 25%;
-}
-
-.media-title {
-    font-family: Montserrat;
-    color: $text-dark-grey;
-    @include rem(16);
-    font-weight: 700;
-    // line-height: 20px;
-}
-
-.media-text {
-    font-family: Montserrat;
-    color: $text-light-grey;
-    @include rem(14);
-    font-weight: 400;
-}
-
 .options__title-desktop {
     font-family: Montserrat;
     color: $accent-color;
@@ -66,23 +43,71 @@
         @include rem(42);       
     }
 
+    @media (max-width: 320px) {        
+        line-height: 34px; 
+        @include rem(32);       
+    }
+
+}
+
+.media {
+    @media (max-width: 320px) {
+        display: block;        
+        width: 100%;    
+    }
+}
+
+
+.media-body-right {
+    width: 70%;
+    
+    @media (max-width: 320px) {
+        display: block;        
+        width: 100%;
+        text-align: center;    
+    }
+
+}
+
+.media-body-left {
+    width: 25%;
+
+    @media (max-width: 320px) { 
+        display: block;       
+        width: 100%; 
+        text-align: center;
+        margin-bottom: 30px;   
+    }
+}
+
+.media-title {
+    font-family: Montserrat;
+    color: $text-dark-grey;
+    @include rem(16);
+    font-weight: 700;    
+}
+
+.media-text {
+    font-family: Montserrat;
+    color: $text-light-grey;
+    @include rem(14);
+    font-weight: 400;
 }
 
 .options__img-wrap {
+    width: 100%;
     @media (max-width: 768px) { 
-        text-align: right;        
+        text-align: right; 
+        border: solid 1px blue;      
     }
+
+
 }
 
 .opinions__img {
-    @media (max-width: 768px) { 
-        min-width: 98%;        
-    }
-
-    @media (max-width: 480px) {
-        min-width: 60%;
-    }
-
+        // width: 100%;
+        display: inline-block;
+ 
 }
 
 
