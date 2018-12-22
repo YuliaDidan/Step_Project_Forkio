@@ -1,14 +1,29 @@
 .pricing {
-  padding: rem(70px) 0 rem(150px); 
+  padding: 70px 0 75px; 
   background: $bg-violet url('../img/pricing-bg.png') no-repeat center/cover;
   text-align: center;
   color: $text-white;
+  @media (max-width: 991px) {
+    padding-bottom: 60px;
+  }
   .section-title-h3 {
     margin-bottom: rem(120px);
+    @media (max-width: 991px) {
+      margin-bottom: 45px;
+    }
+    @media (max-width: 575px) {
+      margin-bottom: 55px;
+    }
+    @media (max-width: 400px) {
+      font-size: rem(28px);
+      font-weight: 700;
+      line-height: 42px;
+    }
   }
+ 
   &-card {
     background-color: rgba(#fff, .11);
-    width: 96%;
+    width: 90%;
     margin: 0 auto;
     transition: all .3s;
     &:hover, &.active {
@@ -18,21 +33,30 @@
         background-color: rgba(#000, .06);
       }
     }
+    @media (max-width: 991px) {
+      margin-bottom: 90px;
+    }
+    @media (max-width: 575px) {
+      margin-bottom: 15px;
+      &.active {
+        margin: 50px auto 70px;
+      }
+    }
     &__header {
-      padding: rem(45px) rem(15px) rem(35px);
+      padding: 45px 15px 35px;
       background-color: rgba(#fff, .06);
     }
     &__title {
       font-size: rem(24px);
-      line-height: rem(20.45px);
+      line-height: 20.45px;
       text-transform: uppercase
     }
     &__content {
-      padding: rem(30px) rem(15px) rem(40px);
+      padding: 30px 15px 40px;
     }
     &__price {
       font-size: rem(60px);
-      line-height: rem(60px);
+      line-height: 60px;
       font-weight: 700;
       text-transform: uppercase;
       span {
@@ -41,16 +65,16 @@
     }
     &__duration {
       display: block;
-      margin: rem(15px) 0 0;
+      margin: 15px 0 0;
       font-size: rem(14px);
       text-transform: uppercase;
       color: rgba(#fff, .3);
       &::after {
         content: '';
         display: block;
-        margin: rem(40px) auto rem(30px);
-        width: rem(60px);
-        height: rem(5px);
+        margin: 40px auto 30px;
+        width: 60px;
+        height: 5px;
         background-color: $accent-color;
       }
     }
@@ -62,12 +86,12 @@
     &__btn {
       @include btn(rem(160px), rem(42px), rem(15px), 500, rgba($text-white, .15));
       text-transform: uppercase;
-      &:hover {
-        background-color: rgba($text-white, .7);
-        color: $accent-color;
-      }
 
     }
+  }
+
+  .section-footer {
+    margin-top: 130px;
   }
   
 }

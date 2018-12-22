@@ -1,12 +1,20 @@
 .logo-header {
   &__link {
     display: block;
-    width: rem(153px);
-    height: rem(41px);
+    width: 153px;
+    height: 41px;
     @include background('../img/logo_header.png');
     transition: all .3s;
     &:hover {
       @include background('../img/logo_header-hover.png');
+    }
+    @media (max-width: 481px) {
+      width: 41px;
+      height: 41px;
+      @include background('../img/logo_min.png');
+      &:hover {
+        @include background('../img/Logo_hover_min.png');
+      }
     }
   }
 }

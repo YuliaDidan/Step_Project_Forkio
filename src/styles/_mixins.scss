@@ -12,7 +12,7 @@
 }
 
 //Buttons
-@mixin btn($width, $height, $font-size, $font-weight: 700, $bg-color: $accent-color, $color: $text-white) {
+@mixin btn($width, $height, $font-size, $font-weight: 700, $bg-color: $accent-color, $bg-color-hover: $text-white, $color: $text-white, $color-hover: $accent-color) {
   width: $width;
   height: $height;
   font-size: $font-size;
@@ -23,8 +23,8 @@
   border-radius: 30px;
   transition: all .3s;
   &:hover {
-    background-color: $text-white;
-    color: $accent-color;
+    background-color: $bg-color-hover;
+    color: $color-hover;
   }
 }
 

@@ -22,3 +22,34 @@ function init() {
     }
   }
 }
+// Christina
+$(document).ready(function() {
+  //show header-nav
+  $('.menu-btn').click(function(){
+
+    let menu = $('.header-nav');
+
+    $('.header .col-12').toggleClass('d-none');
+    $('.sandwich, .cross').toggleClass('close');
+
+    //add animation
+    if(menu.is(':visible')) {
+      menu.slideUp('slow');
+    } else {
+      menu.slideDown('slow');
+    }
+  });
+
+  //Add class active in header-menu__link
+  $(".header-nav__item").on("click", function() {
+    $(".header-nav__item.active").removeClass("active");
+    $(this).toggleClass("active");
+  });
+
+  $(".pricing-card").on("click", function() {
+    $(".pricing-card.active").removeClass("active");
+    $(this).toggleClass("active");
+  });
+
+
+});

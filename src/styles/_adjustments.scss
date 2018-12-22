@@ -36,9 +36,6 @@ button {
         outline: none;
     }
 }
-.menu-btn {
-    display: none;
-}
 
 //Titles
 .section-title-h2 {
@@ -56,4 +53,18 @@ button {
     &.white {
         color: $text-white;
     }
+    @media (max-width: 991px) {
+        font-size: rem(42px);
+        line-height: 60px;
+    }  
+}
+
+.section-footer {
+  &__text {
+    margin: 0;
+    color: rgba($text-violet, .8);
+    font-family: Lato;
+    font-size: rem(14px);
+    line-height: rem(21px); 
+  }
 }
