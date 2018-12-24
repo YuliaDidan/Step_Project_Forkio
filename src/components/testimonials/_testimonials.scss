@@ -1,0 +1,250 @@
+.testimonials {
+    background-color: $text-white;
+    padding: 87px 0 80px 0;
+}
+
+.testimonials__slider-wrap {      
+    margin-bottom: 118px; 
+
+    @media(max-width: 480px) {
+      margin-bottom: 57px;
+    }
+    
+    @media(max-width: 320px) {
+      margin-bottom: 35px;
+    }
+  }
+  
+  .testimonials__slider {    
+    position: relative;
+    z-index: 99; 
+    list-style: none;
+    padding: 0 !important; 
+    margin: 0 !important;      
+  }
+
+  .testimonials__slider-item {
+    width: 60%;
+    text-align: center;   
+    position: relative;
+    padding: 0;   
+    margin: 0 auto;    
+  }
+
+  .testimonials__slider-person-wrap {      
+      display: flex;
+      justify-content: center;
+      margin-bottom: 48px;
+           
+      @media(max-width: 320px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 23px;
+      }
+  }
+
+.testimonials__slider-person-img {
+    display: block;
+    min-width: 85px;
+    min-height: 85px;
+    @media(max-width: 320px) {
+      display: inline-block;
+      margin-bottom: 25px;     
+    }
+  }
+ 
+  .testimonials__slider-person-data-wrap { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;   
+    margin-left: 23px; 
+    text-align: left;
+      @media(max-width: 320px) {
+      text-align: center;      
+    }    
+  }
+
+  .testimonials__slider-person-name,
+  .testimonials__slider-person-email {
+      display: block;
+  }
+
+  .testimonials__slider-person-name {
+    font-family: Montserrat;
+    color:  $second-accent-color;
+    @include rem(24);
+    font-weight: 700;
+    margin-bottom: 7px;    
+    line-height: 23px;
+  }
+
+  .testimonials__slider-person-email {
+    font-family: Montserrat;
+    color:  #8d81ac;
+    @include rem(16);
+    font-weight: 400;
+    line-height: 15px;    
+  }
+
+  .testimonials__slider-description {
+    font-family: Lato;
+    color: $text-dark-grey;
+    @include rem(20);
+    font-weight: 400;
+  }
+
+  .testimonials__slider-description-email {    
+    color: $accent-color;    
+  }
+  
+  .testimonials__slider-time {
+    font-family: Montserrat;
+    color: #848e97;
+    @include rem(16);
+    font-weight: 400;
+    margin: 0 !important;
+  }
+
+  .testimonials__slider-btn {
+    background: none;
+    padding: 0;
+    width: 9px;
+    height: 16px;  
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    color: $text-light-grey;
+    border: 1px solid $text-white;
+    font-size: 16px;
+    opacity: .8; 
+  }
+
+  .testimonials__slider-btn--prev {
+    left: -9px; 
+      @media(max-width: 480px) {
+        left: -2px;      
+    } 
+      @media(max-width: 320px) {
+        left: -1px;      
+    }    
+  }
+  .testimonials__slider-btn--next {
+    right: -9px; 
+
+    @media(max-width: 480px) {
+      right: -2px;      
+    }
+      @media(max-width: 320px) {
+      right: -1px;      
+    }
+  }
+
+  .testimonials__button-wrap:not(:last-child) {    
+    margin-right: 40px; 
+  }
+
+  .testimonials__col-facebook {
+    @media(max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  .testimonials__col-githab,
+  .testimonials__col-facebook {
+    @media(max-width: 480px) {
+      justify-content: center;
+    }
+  }
+
+  .testimonials__button-wrap {
+    display: block;
+    @media (max-width: 768px) { 
+      margin-bottom: 35px;
+    }
+    @media(max-width: 480px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;            
+    }
+  }
+
+  .testimonials__button {
+    position: relative;
+    display: block;
+    padding: 18px 82px;
+    font-family: Montserrat;
+    @include rem(21);
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+    margin-bottom: 18px;
+    max-width: 240px; 
+    
+      @media(max-width: 480px) {
+        min-width: 280px;
+        text-align: center;
+      }
+  }
+
+
+  .testimonials__button-icon {
+    position: absolute;
+    top: 19px;
+    left: 24px;
+  }
+
+  .testimonials__button-github {
+    color: #2b414d;
+    background-color: #f3f3f3;    
+      
+      &:hover {
+        background-color: #2b414d;
+        color: #f3f3f3;
+    }
+  }
+
+  .testimonials__button-twitter {
+    background-color: #26a6d1;
+    color: $text-white;
+    border: solid 1px transparent;
+       
+    &:hover {
+      background-color: $text-white;
+      color: #26a6d1;
+      border: solid 1px #26a6d1;
+    }
+  }
+
+  .testimonials__button-facebook {
+    background-color: #3b5998;
+    color: $text-white;
+    border: solid 1px transparent;
+       
+    &:hover {
+      background-color: $text-white;
+      color: #3b5998;
+      border: solid 1px #3b5998;
+    }
+  }
+
+  .testimonials__button-followers {
+    color: $text-light-grey;
+
+    &:hover {
+      color: $text-light-grey;
+    }
+  }
+
+  .testimonials__button-followers span {
+    display: inline-block;
+    margin-left: 7px;
+  }
+
+
+  

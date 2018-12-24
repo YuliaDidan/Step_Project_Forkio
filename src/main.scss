@@ -1,5 +1,6 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/slick-carousel/slick/slick.scss";
+@import "../node_modules/slick-carousel/slick/slick-theme.scss";
 
 @import "styles/vars";
 @import "styles/mixins";
@@ -11,7 +12,7 @@
 @import "components/hero/hero";
 @import "components/revolutionary/revolutionary";
 @import "components/options/options";
-@import "components/carusel/carusel";
+@import "components/testimonials/testimonials";
 @import "components/about/about";
 @import "components/pricing/pricing";
 @import "components/callback/callback";

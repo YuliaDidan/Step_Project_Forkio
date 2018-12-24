@@ -25,7 +25,7 @@
 .options__title-tablet {
     display: none;
     @media (max-width: 768px) { 
-        display: block;
+        display: block;       
         font-family: Montserrat;
         color: $accent-color;
         @include rem(46);
@@ -37,7 +37,7 @@
         text-align: center;       
     } 
 
-    @media (max-width: 768px) { 
+    @media (max-width: 480px) { 
         margin-left: 0px;
         line-height: 44px; 
         @include rem(42);       
@@ -56,7 +56,6 @@
         width: 100%;    
     }
 }
-
 
 .media-body-right {
     width: 70%;
@@ -94,20 +93,26 @@
     font-weight: 400;
 }
 
-.options__img-wrap {
-    width: 100%;
-    @media (max-width: 768px) { 
-        text-align: right; 
-        border: solid 1px blue;      
-    }
+.options__img-wrap {   
+    width: 100%; 
+    background-image: url('../img/editor.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+    
+    // @media (max-width: 768px) { 
+    //     text-align: right;
+    //     // z-index: -1;
 
+    // }
 
 }
 
-.opinions__img {
-        // width: 100%;
-        display: inline-block;
- 
-}
+// .opinions__img {            
+//     background-image: url('../img/editor.png');
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: center; 
+// }
 
 
