@@ -1,0 +1,143 @@
+.callback {
+    background-color: #f4f4f4;
+    padding: 55px 0 45px;
+}
+
+.callback__title {
+    font-family: Montserrat;
+    color: $second-accent-color;
+    @include rem(30);
+    font-weight: 700;
+    margin: 0 !important;
+    
+    @media(max-width: 479.9px){
+        display: none;
+    }
+}
+
+.callback__title-mobile {
+    display: none;
+    
+    @media(max-width: 479.9px){
+        display: block;
+        font-family: Montserrat;
+        color: $text-dark-grey;
+        @include rem(28);
+        font-weight: 700;
+    }
+
+    @media(max-width: 319.9px){
+        text-align: center;        
+     }
+}
+
+.callback__input-name,
+.callback__input-phone {
+    display: inline-block;
+    width: 100%;
+    border-radius: 25px;
+    background-color: $text-white;
+    padding: 15px 0 15px 26px;
+    font-family: Montserrat;
+    color: #c8cbcf;
+    @include rem(14);
+    font-weight: 400;
+    border: none;
+    
+    @media(max-width: 479.9px){
+        width: 70%;        
+    }
+    @media(max-width: 319.9px){
+        width: 100%;        
+    }
+}
+
+.callback__input-name:focus,
+.callback__input-phone:focus,
+.callback__input-phone:active,
+.callback__input-name:active {
+    border: none;
+    outline: none;
+}
+
+.callback__button {
+    padding: 15px 37px;
+    border-radius: 25px;
+    background-color: $accent-color;
+    color: $text-white;
+    text-transform: uppercase;
+    outline: none;
+    border: solid 1px transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: $accent-color;
+        background-color: $text-white;
+        border: solid 1px $accent-color;
+    }
+}
+
+.callback__button-title {
+    @media(max-width: 479.9px){
+        display: none;
+    }
+}
+
+.callback__button-title-mobile {
+    display: none;
+    @media(max-width: 479.9px){
+        display: block;
+        @include rem(13);
+    }
+    
+}
+
+.col-order,
+.col-button {
+    @media(max-width: 767.9px){
+        justify-content: center;
+    }
+
+   
+}
+
+.col-name,
+.col-phone {
+    @media(max-width: 767.9px){
+        width: 50% !important;
+    }
+
+    @media(max-width: 479.9px){
+        width: 100% !important;
+        justify-content: center;
+    }
+}
+
+.col-order{
+    @media(max-width: 767.9px){
+        margin-bottom: 30px;
+    }
+}
+
+.col-name {
+    @media(max-width: 479.9px){
+        margin-bottom: 15px;
+    }
+}
+
+.col-button {
+    @media(max-width: 767.9px){
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+ 

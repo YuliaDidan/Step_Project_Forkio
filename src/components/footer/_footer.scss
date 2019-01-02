@@ -1,0 +1,79 @@
+.footer{
+    padding: 60px 0;
+}
+
+.logo-text-under,
+.contacts__adress-descr,
+.footer__info-text {
+    font-family: Montserrat;
+    color: $text-light-grey;
+    @include rem(14);
+    font-weight: 400;
+}
+
+.logo-text-under {
+    @media(max-width: 479.9px) {
+        width: 60%;
+    }
+    
+    @media(max-width: 319.9px) {
+        width: 90%;
+    }
+}
+
+.footer__nav-title,
+.contacts__adress-city,
+.footer__info-title {
+    display: block;
+    font-family: Montserrat;
+    color: $text-dark-grey;
+    @include rem(16);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer__nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__nav-item {
+    font-family: Montserrat;
+    color: $accent-color;
+    @include rem(15);
+    font-weight: 400; 
+}
+
+.footer__nav-link {
+    color: $accent-color;
+    transition: text-decoration 0.3s ease-in-out;
+
+    &:hover {
+        color: $accent-color;
+        text-decoration: underline;
+    }
+
+}
+
+.contacts__phone-link {
+    font-family: Montserrat;
+    color: $text-dark-grey;
+    @include rem(30);
+    font-weight: 700; 
+    line-height: 28px;
+}
+
+.contacts__phone-wrap {
+    margin-bottom: 38px;
+}
+
+.contacts__phone-schedule {
+    display: block;
+    font-family: Montserrat;
+    color: $text-light-grey;
+    @include rem(12);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+

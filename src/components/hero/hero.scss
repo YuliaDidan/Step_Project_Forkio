@@ -11,15 +11,15 @@
     font-weight: 700;    
     margin-bottom: 20px;  
     
-    @media (max-width: 768px) { 
+    @media (max-width: 767.9px) { 
         @include rem(72);        
     } 
 
-    @media (max-width: 480px) {
+    @media (max-width: 479.9px) {
         @include rem(54);
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 319.9px) {
         @include rem(48);
     }
 }
@@ -31,16 +31,16 @@
     font-weight: 400;    
     margin-bottom: 20px;
     
-    @media (max-width: 767.98px) { 
+    @media (max-width: 767.9px) { 
         @include rem(24);        
     } 
 
-    @media (max-width: 479.98px) {
+    @media (max-width: 479.9px) {
         @include rem(20);
         line-height: 24px;
     }
 
-    @media (max-width: 319.98px) {
+    @media (max-width: 319.9px) {
         @include rem(18);
     }
 
@@ -54,15 +54,15 @@
     text-transform: uppercase;
     margin-bottom: 455px;
     
-    @media (max-width: 767.98px) { 
+    @media (max-width: 767.9px) { 
         @include rem(14);        
     } 
 
-    @media (max-width: 479.98px) {
+    @media (max-width: 479.9px) {
         @include rem(16);
     }
 
-    @media (max-width: 319.98px) {
+    @media (max-width: 319.9px) {
         @include rem(14);
     }
 
@@ -90,7 +90,7 @@
         border: solid 3px $accent-color;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 479.9px) {
         @include rem(18);
         padding: 15px 27px;
     }
