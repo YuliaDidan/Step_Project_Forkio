@@ -1,9 +1,11 @@
-# beetroot-sass-template
+# sass-template
 
 Run project 
 
-`npm start`
+`npm i`
+
+`gulp watch`
 
 Optimize all images
 
-`npm img`
+`gulp img`
