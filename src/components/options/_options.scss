@@ -1,30 +1,38 @@
 .options {
     background-color: #f4f4f4;
-    padding: 85px 0 35px 0; 
-    padding-left: 90px; 
+    padding: 85px 0 35px 90px;   
     
-    @media (max-width: 767.9px) { 
+    @media (max-width: 992px) { 
         padding-left: 0px;       
     } 
+
+    @media (max-width: 480px) {
+        padding: 68px 0 35px 0;
+    }
+    
+    @media (min-width: 320px) and (max-width: 400px) {
+        padding: 34px 0; 
+    }
+
 }
 
 .options__title-desktop {
     font-family: Montserrat;
     color: $accent-color;
-    @include rem(46);
+    @include rem(44);
     font-weight: 700;
     margin-bottom: 30px;
     margin-left: 20px;
     line-height: 30px;
     
-    @media (max-width: 767.9px) { 
+    @media (max-width: 992px) { 
         display: none;        
     } 
 }
 
 .options__title-tablet {
     display: none;
-    @media (max-width: 767.9px) { 
+    @media (max-width: 992px) { 
         display: block;       
         font-family: Montserrat;
         color: $accent-color;
@@ -37,30 +45,42 @@
         text-align: center;       
     } 
 
-    @media (max-width: 479.9px) { 
+    @media (max-width: 480px) { 
         margin-left: 0px;
         line-height: 44px; 
-        @include rem(42);       
+        @include rem(50);
+        line-height: 54px;       
     }
 
-    @media (max-width: 319.9px) {        
-        line-height: 34px; 
-        @include rem(32);       
+    @media (min-width: 320px) and (max-width: 400px) {        
+        line-height: 44px; 
+        @include rem(42);
+        margin-bottom: 34px;       
     }
 
 }
 
 .media {
-    @media (max-width: 319.9px) {
+    @media (max-width: 992px) {
+        // padding-right: 67px;
+    }
+
+    @media (max-width: 480px) {
+        padding-right: 36px;
+        padding-left: 26px;
+    }
+
+    @media (min-width: 320px) and (max-width: 400px) {
         display: block;        
-        width: 100%;    
+        width: 100%;
+        padding: 0 10px;    
     }
 }
 
 .media-body-right {
     width: 70%;
     
-    @media (max-width: 319.9px) {
+    @media (min-width: 320px) and (max-width: 400px) {
         display: block;        
         width: 100%;
         text-align: center;    
@@ -71,7 +91,15 @@
 .media-body-left {
     width: 25%;
 
-    @media (max-width: 319.9px) { 
+    @media (max-width: 992px) {
+        width: 20%; 
+    }
+
+    @media (max-width: 480px) {
+        width: 30%; 
+    }
+
+    @media (min-width: 320px) and (max-width: 400px) { 
         display: block;       
         width: 100%; 
         text-align: center;
@@ -90,12 +118,20 @@
     font-family: Montserrat;
     color: $text-light-grey;
     @include rem(14);
-    font-weight: 400;
+    font-weight: 400;  
 }
 
 .options__img-title-wrap {
     width: 100%;
     height: 100%;
+    
+    @media (max-width: 480px) {
+        padding-left: 26px;
+    }
+
+    @media (min-width: 320px) and (max-width: 400px) {
+        padding-left: 18px;
+    }
 }
 
 .options__img-wrap {   
@@ -105,16 +141,16 @@
     background-size: 100%;
     background-repeat: no-repeat;     
     
-    @media (max-width: 767.9px) { 
+    @media (max-width: 992px) { 
         background-position: right;        
     }
 
-    @media (max-width: 479.9px) { 
+    @media (max-width: 480px) { 
         background-position: inherit;
         height: 345px;        
     }
 
-    @media (max-width: 319.9px) { 
+    @media (min-width: 320px) and (max-width: 400px) { 
         background-size: inherit;
                
     }

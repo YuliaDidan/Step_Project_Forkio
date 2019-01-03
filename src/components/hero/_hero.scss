@@ -11,15 +11,15 @@
     font-weight: 700;    
     margin-bottom: 20px;  
     
-    @media (max-width: 767.9px) { 
+    @media (max-width: 992px) { 
         @include rem(72);        
     } 
 
-    @media (max-width: 479.9px) {
+    @media (max-width: 480px) {
         @include rem(54);
     }
 
-    @media (max-width: 319.9px) {
+    @media (min-width: 320px) and (max-width: 400px) {
         @include rem(48);
     }
 }
@@ -31,16 +31,16 @@
     font-weight: 400;    
     margin-bottom: 20px;
     
-    @media (max-width: 767.9px) { 
+    @media (max-width: 992px) { 
         @include rem(24);        
     } 
 
-    @media (max-width: 479.9px) {
+    @media (max-width: 480px) {
         @include rem(20);
         line-height: 24px;
     }
 
-    @media (max-width: 319.9px) {
+    @media (min-width: 320px) and (max-width: 400px) {
         @include rem(18);
     }
 
@@ -54,22 +54,29 @@
     text-transform: uppercase;
     margin-bottom: 455px;
     
-    @media (max-width: 767.9px) { 
+    @media (max-width: 992px) { 
         @include rem(14);        
     } 
 
-    @media (max-width: 479.9px) {
+    @media (max-width: 480px) {
         @include rem(16);
     }
 
-    @media (max-width: 319.9px) {
+    @media (min-width: 320px) and (max-width: 400px) {
         @include rem(14);
     }
-
 }
 
 .hero__button-container {    
     transform: translateY(70px);
+    
+    @media (max-width: 992px) { 
+        transform: translateY(80px);        
+    } 
+    
+    @media (max-width: 480px) {
+        transform: translateY(70px);
+    }    
 }
 
 .hero__button {
@@ -90,12 +97,12 @@
         border: solid 3px $accent-color;
     }
 
-    @media (max-width: 479.9px) {
+    @media (max-width: 480px) {
         @include rem(18);
         padding: 15px 27px;
     }
     
-    @media (max-width: 3200px) {
+    @media (min-width: 320px) and (max-width: 400px) {
         @include rem(17);
         padding: 13px 25px;
     }
