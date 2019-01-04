@@ -1,16 +1,26 @@
 .testimonials {
     background-color: $text-white;
     padding: 87px 0 80px 0;
+
+    @media(min-width: 320px) and (max-width: 400px) {
+      padding: 60px 0 60px 0;
+    }
 }
 
-.testimonials__slider-wrap {       
-    margin-bottom: 118px; 
+.testimonials__slider-wrap {
+    width: 100%;       
+    margin-bottom: 118px;
+    
+    @media(min-width:481px) and (max-width: 992px) {
+      border-bottom: 1px solid #c7c7c7;
+      margin-bottom: 83px;
+    }
 
-    @media(max-width: 479.9px) {
+    @media(max-width: 480px) {
       margin-bottom: 57px;
     }
     
-    @media(max-width: 319.9px) {
+    @media(min-width: 320px) and (max-width: 400px) {
       margin-bottom: 35px;
     }
   }
@@ -34,7 +44,7 @@
       justify-content: center;
       margin-bottom: 48px;
            
-      @media(max-width: 319.9px) {
+      @media(min-width: 320px) and (max-width: 400px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -47,7 +57,7 @@
     display: block;
     min-width: 85px;
     min-height: 85px;
-    @media(max-width: 319.9px) {
+    @media(min-width: 320px) and (max-width: 400px) {
       display: inline-block;
       margin-bottom: 25px;     
     }
@@ -59,7 +69,7 @@
     justify-content: center;   
     margin-left: 23px; 
     text-align: left;
-      @media(max-width: 319.9px) {
+    @media(min-width: 320px) and (max-width: 400px) {
       text-align: center;      
     }    
   }
@@ -94,8 +104,12 @@
     @include rem(20);
     font-weight: 400;
 
-    @media(max-width: 767.9px) {
-      width: 100%;
+    @media(max-width: 992px) {
+      width: 70%;
+    }
+
+    @media(max-width: 480px) {
+      width: 80%;
     }
   }
 
@@ -109,6 +123,11 @@
     @include rem(16);
     font-weight: 400;
     margin: 0 !important;
+    
+    @media(min-width:481px) and (max-width: 992px) {      
+      margin-bottom: 20px !important;
+    }
+
   }
 
   .testimonials__slider-btn {
@@ -126,74 +145,86 @@
     line-height: 25px;
     opacity: .8; 
     
-    @media(max-width: 479.9px) {
+    @media(max-width: 480px) {
       top: 50%;    
     }
     
-    @media(max-width: 319.9px) {
+    @media(min-width: 320px) and (max-width: 400px) {
       top: 58%;     
     } 
   }
 
   .testimonials__slider-btn--prev {
-    left: 97px; 
+      left: 97px; 
 
-    @media(max-width: 767.9px) {
-      left: -10px;      
-  } 
-     
-      @media(max-width: 479.9px) {
+    @media(max-width: 992px) {
+      left: 45px;      
+  }      
+      @media(max-width: 480px) {
         left: -2px;      
     } 
-      @media(max-width: 319.9px) {
+    @media(min-width: 320px) and (max-width: 400px) {
         left: -1px;      
     }    
   }
   .testimonials__slider-btn--next {
     right: 97px; 
 
-    @media(max-width: 767.9px) {
-      right: -10px;     
+    @media(max-width: 992px) {
+      right: 45px;     
     }     
 
-    @media(max-width: 479.9px) {
+    @media(max-width: 480px) {
       right: -2px;      
     }
-      @media(max-width: 319.9px) {
+    @media(min-width: 320px) and (max-width: 400px) {
       right: -1px;      
     }
   }
 
-  .testimonials__button-wrap:not(:last-child) {    
-    margin-right: 40px; 
-  }
-
-  .testimonials__col-facebook {
-    @media(max-width: 767.9px) {
-      justify-content: center;
-    }
-  }
-
   .testimonials__col-githab,
-  .testimonials__col-facebook {
-    @media(max-width: 479.9px) {
-      justify-content: center;
+  .testimonials__col-twitter {
+    
+    @media(max-width: 992px) {
+      width: 50% !important;
+      margin-bottom: 35px;
+    } 
+
+    @media(max-width: 480px) {
+      width: 100% !important;      
     }
   }
 
-  .testimonials__button-wrap {
-    display: block;
-    @media (max-width: 767.9px) { 
-      margin-bottom: 35px;
-    }
-    @media(max-width: 479.9px) {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;            
-    }
+  .testimonials__col-facebook {    
+    @media(max-width: 992px) {
+      width: 100% !important;      
+    } 
   }
+
+  .testimonials__col-githab {
+    justify-content: flex-end;
+  }
+
+  .testimonials__col-twitter {
+    justify-content: flex-start;
+  }
+
+  .testimonials__col-facebook {
+    justify-content: center;
+  }
+  
+  .testimonials__col-githab,
+  .testimonials__col-twitter,
+  .testimonials__col-facebook {
+
+    @media(max-width: 992px) {
+      justify-content: center;
+    } 
+    
+    @media(max-width: 480px) {
+      justify-content: center;
+    }
+  } 
 
   .testimonials__button {
     position: relative;

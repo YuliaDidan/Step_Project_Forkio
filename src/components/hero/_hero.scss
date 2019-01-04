@@ -68,11 +68,7 @@
 }
 
 .hero__button-container {    
-    transform: translateY(70px);
-    
-    @media (max-width: 992px) { 
-        transform: translateY(80px);        
-    } 
+    transform: translateY(80px);  
     
     @media (max-width: 480px) {
         transform: translateY(70px);
