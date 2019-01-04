@@ -53,3 +53,12 @@ $(document).ready(function() {
 
 
 });
+
+
+$(document).ready(function(){
+  $('.testimonials__slider').slick({
+    swipeToSlide: true,
+    prevArrow: $('.testimonials__slider-btn--prev'),
+    nextArrow: $('.testimonials__slider-btn--next')
+  });
+});
