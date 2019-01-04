@@ -1,60 +1,88 @@
 .revolutionary {
-  padding: rem(130px) 0 rem(70px);
+  padding: 130px 0 70px;
   text-align: center;
+  @media (max-width: 991px) {
+    padding: 155px 0 100px;
+  }
+  @media (max-width: 480px) {
+    padding: 135px 0 75px;
+  }
+  @media (max-width: 400px) {
+    padding: 120px 0 65px;
+  }
+
+  .section-title-h2 {
+    @media (max-width: 991px) {
+      font-size: rem(42px);
+    }
+    @media (max-width: 400px) {
+      font-size: rem(26px);
+      line-height: 42px;
+    }
+  }
+
   &-text {
     width: 85%;
-    margin: rem(25px) auto 0;
+    margin: 25px auto 0;
     font-family: Lato;
     font-size: rem(21px);
     font-weight: 400;
-    line-height: rem(32px);
-    color: $text-dark-grey;  
+    line-height: 32px;
+    color: $text-dark-grey; 
+    margin-bottom: 30px; 
+    @media (max-width: 767px) {
+      font-size: rem(16px);
+      line-height: 26px;
+    }
+    @media (max-width: 400px) {
+      font-size: rem(14px);
+      line-height: 20px;
+    }
   }
-  &-rating {
-    display: inline-flex;
-    margin-top: rem(30px);
-    &__item {
-      display: inline-flex;
-      margin: 0 rem(5px);
-      border: 1px solid #d5d5d5;
-      border-radius: rem(3px);
-      a {
-        display: block;
-        padding: rem(5px) rem(10px);
-        font-size: rem(12px);
-        font-weight: 700;
-        color: $text-dark-grey;
-        text-decoration: none;
-        &:hover {
-          .eye, .star, .git-branch {
-            transform: scale(1.2);
-          }
+   
+  &-item {
+    margin: 0 5px;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    @media (max-width: 400px) {
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+      padding: 5px 10px;
+      font-size: rem(12px);
+      font-weight: 700;
+      color: $text-dark-grey;
+      text-decoration: none;
+      &:hover {
+        .eye, .star, .git-branch {
+          transform: scale(1.2);
         }
       }
     }
-    &__icon {
-      background-color: #f1f1f1;
-      border-right: 1px solid #d5d5d5;
-      color: $text-dark-grey;
-      transition: all .3s; 
-      .eye, .star, .git-branch {
-        transition: all .3s;
-      }  
-      .eye {
-        width: rem(15px);
-        height: rem(12px); 
-      }
-      .star {
-        width: rem(15px);
-        height: rem(15px);
-      }
-      .git-branch {
-        width: rem(12px);
-        height: rem(16px);
-      }
-      &:hover {
-        background-color: darken(#f1f1f1, 10%);
-      }
+  }
+  &-icon {
+    background-color: #f1f1f1;
+    border-right: 1px solid #d5d5d5;
+    color: $text-dark-grey;
+    transition: all .3s; 
+    .eye, .star, .git-branch {
+      transition: all .3s;
+    }  
+    .eye {
+      width: 15px;
+      height: 12px; 
+    }
+    .star {
+      width: 15px;
+      height: 15px;
+    }
+    .git-branch {
+      width: 12px;
+      height: 16px;
+    }
+    &:hover {
+      background-color: darken(#f1f1f1, 10%);
     }
   }
 }

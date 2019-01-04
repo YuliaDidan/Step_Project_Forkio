@@ -1,44 +1,66 @@
 .about {
-  padding-top: rem(100px);
+  padding-top: 100px;
+  &::after {
+    content: '';
+    display: block;
+    margin: 15px auto 0;
+    width: 60%;
+    height: 2px;
+    background-color: $text-decoration;
+  }
   @include background('../img/about.png');
   text-align: center;
+  @media (max-width: 991px) {
+    padding-top: 80px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 80px;
+  }
+  @media (max-width: 400px) {
+    padding-top: 60px;
+    font-size: rem(36px);
+      line-height: 48px;
+      margin-bottom: 45px;
+  }
   .section-title-h3 {
-    margin-bottom: rem(85px);
+    margin-bottom: 80px; 
   }
   &-item {
-    margin-bottom: rem(100px);
+    margin: 0 auto 100px;
+    @media (max-width: 991px) {
+      margin-bottom: 65px;
+    }
+    @media (max-width: 575px) {
+      width: 70%;
+      margin: 0 auto 65px;
+    }
+    @media (max-width: 400px) {
+      width: auto;
+      margin-bottom: 40px;
+    }
   }
   &-icon {
-    height: rem(85px);
+    height: 90px;
+    @media (max-width: 575px) {
+      height: auto;
+    }
   }
   &-text {
     font-family: Lato;
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 700;
     font-style: italic;
     line-height: 24px;
     color: $text-white;
-  }
-  &-footer__text {
-    margin: 0;
-    color: rgba($text-violet, .8);
-    font-family: Lato;
-    font-size: rem(14px);
-    line-height: rem(21px);
-    &::after {
-      content: '';
-      display: block;
-      margin: rem(15px) auto 0;
-      width: 75%;
-      height: rem(2px);
-      background-color: $text-decoration;
+    @media (max-width: 575px) {
+      margin-top: 20px;
     }
   }
 }
 
 //Icons Section About
 @mixin icons-about($width, $height, $x, $y) {
-  background: url('../img/icons_about/sprites-about.png') no-repeat;
+  background: url('../img/icons_about/sprites.png') no-repeat;
   display: inline-block;
   vertical-align: middle;
 	width: $width;
@@ -47,21 +69,27 @@
 }
 
 .logo1 {
-  @include icons-about(rem(165px), rem(43px), 0, rem(-58px));
+  @include icons-about(165px, 43px, 0, -58px);
 }
 .logo2 {
-  @include icons-about(rem(148px), rem(50px), 0, rem(-101px));
+  @include icons-about(148px, 50px, 0, -101px);
 }
 .logo3 {
-  @include icons-about(rem(64px), rem(64px), rem(-148px), rem(-101px));
+  @include icons-about(64px, 64px, -148px, -101px);
   
 }
 .logo4 {
-  @include icons-about(rem(225px), rem(24px), 0, 0);
+  @include icons-about(225px, 24px, 0, 0);
 }
 .logo5 {
-  @include icons-about(rem(166px), rem(34px), 0, rem(-24px));
+  @include icons-about(166px, 34px, 0, -24px);
 }
 .logo6 {
-  @include icons-about(rem(108px), rem(34px), 0, rem(-151px));
+  @include icons-about(108px, 34px, 0, -151px);
+}
+.sandwich {
+  @include icons-about(26px, 21px, -166px, -24px);
+}
+.cross {
+  @include icons-about(19px, 19px, -192px, -24px);
 }
