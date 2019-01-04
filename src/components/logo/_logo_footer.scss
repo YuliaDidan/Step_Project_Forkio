@@ -2,25 +2,25 @@
     margin-bottom: 25px;
     padding-bottom: 8px;
 
-    @media(max-width: 479.9px) {
+    @media(max-width: 480px) {
         border-bottom: solid 1px #c7c7c7;
     }
 
-    @media(max-width: 319.9px) {
+    @media(min-width: 320px) and (max-width: 400px){
         border-bottom: none; 
     }
 }
 
 .logo-footer__link {
     display: block;
-    @media (max-width: 319.9px) {
+    @media(min-width: 320px) and (max-width: 400px) {
         display: none;
     }
 }
 
 .logo-footer__link-mob {
     display: none;
-    @media (max-width: 319.9px) {
+    @media(min-width: 320px) and (max-width: 400px) {
         display: block;
         font-family: Montserrat;
         @include rem(24);
