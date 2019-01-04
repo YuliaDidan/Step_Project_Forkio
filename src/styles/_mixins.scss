@@ -2,8 +2,30 @@
     font-size: ($px / $root-font) + rem;
   }
 
-  @mixin background($url) {
-    background: center center no-repeat/cover;
-    background-image: url($url);    
-  }
+@mixin background($url) {
+  background: url($url) no-repeat center/cover;
+}
   
+//Functions
+@function rem($value) {
+  @return unquote(($value/1px)/14 + "rem");
+}
+
+//Buttons
+@mixin btn($width, $height, $font-size, $font-weight: 700, $bg-color: $accent-color, $color: $text-white) {
+  width: $width;
+  height: $height;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  cursor: pointer;
+  background-color: $bg-color;
+  color: $color;
+  border: 1px solid $accent-color;
+  border-radius: rem(30px);
+  transition: all .3s;
+  &:hover {
+    background-color: $text-white;
+    color: $accent-color;
+  }
+}
+

@@ -1,0 +1,60 @@
+.revolutionary {
+  padding: rem(130px) 0 rem(70px);
+  text-align: center;
+  &-text {
+    width: 85%;
+    margin: rem(25px) auto 0;
+    font-family: Lato;
+    font-size: rem(21px);
+    font-weight: 400;
+    line-height: rem(32px);
+    color: $text-dark-grey;  
+  }
+  &-rating {
+    display: inline-flex;
+    margin-top: rem(30px);
+    &__item {
+      display: inline-flex;
+      margin: 0 rem(5px);
+      border: 1px solid #d5d5d5;
+      border-radius: rem(3px);
+      a {
+        display: block;
+        padding: rem(5px) rem(10px);
+        font-size: rem(12px);
+        font-weight: 700;
+        color: $text-dark-grey;
+        text-decoration: none;
+        &:hover {
+          .eye, .star, .git-branch {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+    &__icon {
+      background-color: #f1f1f1;
+      border-right: 1px solid #d5d5d5;
+      color: $text-dark-grey;
+      transition: all .3s; 
+      .eye, .star, .git-branch {
+        transition: all .3s;
+      }  
+      .eye {
+        width: rem(15px);
+        height: rem(12px); 
+      }
+      .star {
+        width: rem(15px);
+        height: rem(15px);
+      }
+      .git-branch {
+        width: rem(12px);
+        height: rem(16px);
+      }
+      &:hover {
+        background-color: darken(#f1f1f1, 10%);
+      }
+    }
+  }
+}

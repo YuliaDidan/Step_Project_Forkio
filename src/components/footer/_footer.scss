@@ -12,11 +12,11 @@
 }
 
 .logo-text-under {
-    @media(max-width: 479.9px) {
+    @media(max-width: 480px) {
         width: 60%;
     }
     
-    @media(max-width: 319.9px) {
+    @media (min-width: 320px) and (max-width: 400px) {
         width: 90%;
     }
 }

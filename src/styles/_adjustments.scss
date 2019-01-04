@@ -37,3 +37,30 @@ button:focus {
   a:hover{
       text-decoration: none;
   }
+button {
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+.menu-btn {
+    display: none;
+}
+
+//Titles
+.section-title-h2 {
+    color: $second-accent-color;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-title-h3 {
+    // width: 100%;
+    color: $accent-color;
+    font-size: rem(48px);
+    font-weight: 700;
+    &.white {
+        color: $text-white;
+    }
+}

@@ -3,6 +3,34 @@
     padding: 55px 0 45px;
 }
 
+.col-title-order,
+.col-button{
+    @media (max-width: 992px) {
+        justify-content: center !important; 
+    }    
+        
+}
+
+.col-title-order {
+    @media (max-width: 992px) {        
+        margin-bottom: 30px;
+    }  
+
+}
+
+.col-input-name,
+.col-input-phone {
+    @media (max-width: 992px) {
+        margin-bottom: 30px; 
+    }
+
+    @media (max-width: 480px) {
+        justify-content: center;        
+    }
+}
+
+
+
 .callback__title {
     font-family: Montserrat;
     color: $second-accent-color;
@@ -10,7 +38,7 @@
     font-weight: 700;
     margin: 0 !important;
     
-    @media(max-width: 479.9px){
+    @media(max-width: 480px){
         display: none;
     }
 }
@@ -18,7 +46,7 @@
 .callback__title-mobile {
     display: none;
     
-    @media(max-width: 479.9px){
+    @media(max-width: 480px){
         display: block;
         font-family: Montserrat;
         color: $text-dark-grey;
@@ -44,10 +72,10 @@
     font-weight: 400;
     border: none;
     
-    @media(max-width: 479.9px){
+    @media(max-width: 480px){
         width: 70%;        
     }
-    @media(max-width: 319.9px){
+    @media(min-width: 320px) and (max-width: 400px) {
         width: 100%;        
     }
 }
@@ -79,58 +107,21 @@
 }
 
 .callback__button-title {
-    @media(max-width: 479.9px){
+    @media(max-width: 480px){
         display: none;
     }
 }
 
 .callback__button-title-mobile {
     display: none;
-    @media(max-width: 479.9px){
+    @media(max-width: 480px){
         display: block;
         @include rem(13);
     }
     
 }
 
-.col-order,
-.col-button {
-    @media(max-width: 767.9px){
-        justify-content: center;
-    }
 
-   
-}
-
-.col-name,
-.col-phone {
-    @media(max-width: 767.9px){
-        width: 50% !important;
-    }
-
-    @media(max-width: 479.9px){
-        width: 100% !important;
-        justify-content: center;
-    }
-}
-
-.col-order{
-    @media(max-width: 767.9px){
-        margin-bottom: 30px;
-    }
-}
-
-.col-name {
-    @media(max-width: 479.9px){
-        margin-bottom: 15px;
-    }
-}
-
-.col-button {
-    @media(max-width: 767.9px){
-        margin-top: 30px;
-    }
-}
 
 
 
