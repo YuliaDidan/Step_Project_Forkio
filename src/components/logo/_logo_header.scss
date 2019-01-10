@@ -8,7 +8,7 @@
     &:hover {
       @include background('../img/logo_header-hover.png');
     }
-    @media (max-width: 481px) {
+    @media (max-width: 575px) {
       width: 41px;
       height: 41px;
       @include background('../img/logo_min.png');

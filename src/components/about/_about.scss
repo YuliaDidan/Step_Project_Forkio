@@ -19,12 +19,15 @@
   @media (max-width: 400px) {
     padding-top: 60px;
     font-size: rem(36px);
-      line-height: 48px;
-      margin-bottom: 45px;
+      line-height: 48px;      
   }
   .section-title-h3 {
     margin-bottom: 80px; 
+    @media (max-width: 575px) {
+      margin-bottom: 45px;
+    }
   }
+
   &-item {
     margin: 0 auto 100px;
     @media (max-width: 991px) {
