@@ -25,18 +25,19 @@ function init() {
 // Christina
 $(document).ready(function() {
   //show header-nav
-  $('.menu-btn').click(function(){
-
+  $('.menu-btn').click(function(evt){
+    evt.preventDefault(); 
+    
     let menu = $('.header-nav');
 
-    $('.header .col-12').toggleClass('d-none');
+    $('.header .mobile').toggleClass('d-none');
     $('.sandwich, .cross').toggleClass('close');
 
-    //add animation
+    // add animation
     if(menu.is(':visible')) {
-      menu.slideUp('slow');
-    } else {
       menu.slideDown('slow');
+    } else {
+      menu.slideUp('slow');
     }
   });
 
