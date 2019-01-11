@@ -6,13 +6,16 @@
 .col-title-order,
 .col-button{
     @media (max-width: 992px) {
+        display: flex;
+        align-items: flex-start;
         justify-content: center !important; 
     }    
         
 }
 
-.col-title-order {
-    @media (max-width: 992px) {        
+.col-title-order {  
+
+    @media (max-width: 993px) {        
         margin-bottom: 30px;
     }  
 
@@ -21,6 +24,9 @@
 .col-input-name,
 .col-input-phone {
     @media (max-width: 992px) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
         margin-bottom: 30px; 
     }
 
@@ -37,6 +43,10 @@
     @include rem(30);
     font-weight: 700;
     margin: 0 !important;
+
+    @media (max-width: 1199.98px) { 
+        @include rem(27);
+    }
     
     @media(max-width: 480px){
         display: none;

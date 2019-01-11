@@ -62,6 +62,10 @@
     @include rem(30);
     font-weight: 700; 
     line-height: 28px;
+
+    @media (max-width: 1199.98px) { 
+        @include rem(28);
+     }
 }
 
 .contacts__phone-wrap {

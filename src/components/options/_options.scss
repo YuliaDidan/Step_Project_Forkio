@@ -1,8 +1,12 @@
 .options {
     background-color: #f4f4f4;
-    padding: 85px 0 35px 90px;   
+    padding: 85px 0 35px 40px; 
     
-    @media (max-width: 992px) { 
+    @media (max-width: 1199.98px) {
+        padding: 85px 0 35px 0;
+     }
+    
+    @media (max-width: 991.9px) { 
         padding-left: 0px;       
     } 
 
@@ -19,20 +23,25 @@
 .options__title-desktop {
     font-family: Montserrat;
     color: $accent-color;
-    @include rem(44);
+    @include rem(46);
     font-weight: 700;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 15px;
     line-height: 30px;
+
+    @media (max-width: 1199.98px) {
+        @include rem(40);
+     }
     
-    @media (max-width: 992px) { 
+    @media (max-width: 991.9px) { 
         display: none;        
     } 
 }
 
 .options__title-tablet {
     display: none;
-    @media (max-width: 992px) { 
+
+    @media (max-width: 991.9px) { 
         display: block;       
         font-family: Montserrat;
         color: $accent-color;
@@ -88,7 +97,7 @@
 .media-body-left {
     width: 25%;
 
-    @media (max-width: 992px) {
+    @media (max-width: 993px) {
         width: 20%; 
     }
 
@@ -138,7 +147,7 @@
     background-size: 100%;
     background-repeat: no-repeat;     
     
-    @media (max-width: 992px) { 
+    @media (max-width: 993px) { 
         background-position: right;        
     }
 
